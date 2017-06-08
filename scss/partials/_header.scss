@@ -1,0 +1,64 @@
+.header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 600;
+    padding: 1rem 0;
+    background-color: #fff;
+    box-shadow: 0 1px 1px rgba(#ccc, .7);
+
+    &__container {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    &__icons-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__logo-container {
+        margin: 0;
+        padding: 0;
+        width: 8.5rem;
+    }
+    &__icon-menu,
+    &__icon-close {
+        width: 2.5rem;
+        cursor: pointer;
+        position: relative;
+        z-index: 750;
+    }
+    &__icon-menu {
+        fill: $color2;
+    }
+    &__icon-close {
+        fill: #fff;
+        display: none;
+    }
+    //search box
+    &__form-container {
+
+    }
+    &__form {
+
+    }
+    &__input-container {
+
+    }
+    &__input-label {
+
+    }
+    &__input {
+        display: none;
+
+        @media screen and (min-width: 48em) {
+            display: initial;
+            border: 1px solid rgba(#ccc, .7);
+            &:focus {
+                outline: none;
+            }
+        }
+    }
+}

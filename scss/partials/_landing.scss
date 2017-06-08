@@ -1,0 +1,9 @@
+.landing {
+    background: linear-gradient($color2, $color1);
+
+    &__container {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

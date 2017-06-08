@@ -9,8 +9,49 @@ html {
     box-sizing: inherit;
 }
 
+//color variables
+$color1: #1D73C9;
+$color2: #27C9FF;
+$color3: #CE4139;
+$color4: #fafafa;
+$color5: #282D31;
+
+//font-family
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700');
+
+//font-weight
+$normal: 400;
+$medium: 600;
+$bold: 700;
+
 //General styles
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
 
 img {
     max-width: 100%;
 }
+
+ul {
+    list-style: none;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+//partials
+
+@import "partials/header";
+@import "partials/main-nav";
+@import "partials/landing";
+@import "partials/courses";
+@import "partials/edcamp";
+@import "partials/features";
+@import "partials/social";
+@import "partials/footer";
