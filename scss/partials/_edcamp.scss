@@ -1,0 +1,70 @@
+.edcamp {
+    padding: 5rem 0 3rem;
+    background: linear-gradient(to left, $color1, $color2);
+
+    &__container {
+        width: 90%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    //left container
+    &__left-container {
+
+        @media screen and (max-width: 64em) {
+            margin-bottom: 4rem;
+        }
+    }
+    &__img-container {
+        position: relative;
+        margin: 0 auto;
+        padding: 0;
+        width: 16rem;
+        transform: rotate(-4deg);
+        box-shadow: 0 15px 16px -10px rgba(black, .4);
+        &::after {
+            content: "EDcamp 2016";
+            display: block;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 4rem;
+            line-height: 3;
+            text-align: center;
+            font-size: 1.3rem;
+            font-style: italic;
+            background-color: #fff;
+            color: rgba($color5, .8);
+        }
+    }
+    &__img {
+        border: 6px solid #fff;
+    }
+    //right container
+    &__right-container {
+
+    }
+    &__copy-container {
+        position: relative;
+        &:before {
+            content: "\"";
+            position: absolute;
+            top: -.8rem;
+            left: 0;
+            font-size: 5rem;
+            color: #fff;
+        }
+    }
+    &__text,
+    &__link-text {
+        font-size: 1.1rem;
+        font-style: italic;
+        line-height: 1.6;
+        color: #fff;
+        padding-left: 3rem;
+    }
+    &__link-text {
+        text-decoration: underline;
+        display: block;
+    }
+}

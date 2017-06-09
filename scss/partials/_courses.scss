@@ -1,0 +1,102 @@
+.courses {
+    padding: 2.5rem 0;
+    &__container {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    &__header {
+        text-align: center;
+        margin-bottom: 3rem;
+    }
+    &__header-title {
+        font-size: 1.6rem;
+        color: $color5;
+    }
+    //items
+    &__items-container {
+
+    }
+    &__item {
+        margin-bottom: 2.5rem;
+        border-radius: .5rem;
+        background-color: #fff;
+        box-shadow: .2px .2px 0 1px rgba(#ccc, .5);
+        cursor: pointer;
+    }
+    //bg image courses
+    &__img {
+        width: 100%;
+        padding-bottom: 11rem;
+        border-radius: .5rem .5rem 0 0;
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    &__img--1 {
+        background-image: url(../images/JavaScriptAvanzado-poster-720_0.jpg);
+    }
+    &__img--2 {
+        background-image: url(../images/design-poster-720_0.jpg);
+    }
+    &__img--3 {
+        background-image: url(../images/frontend-poster-720_0.jpg);
+    }
+    &__img--4 {
+        background-image: url(../images/go-poster-720_0.jpg);
+    }
+    //Description items
+    &__description-container {
+        padding: 1.5rem 1rem;
+        text-align: center;
+        border-radius: 0 0 .5rem .5rem;
+    }
+    &__title-container {
+
+    }
+    &__title {
+        margin-top: 0;
+        font-size: 1.1rem;
+        color: rgba($color5, .8);
+        line-height: 1.6;
+    }
+    &__teacher-name {
+        font-style: italic;
+        color: $color5;
+    }
+    &__button-container {
+        margin-top: 1.5rem;
+    }
+    &__price-link {
+        display: inline-block;
+        padding: 0 1rem;
+        border: 1px solid $color3;
+        border-radius: .3rem;
+        line-height: 2.4;
+        color: $color3;
+
+    }
+    &__icon-cart {
+        width: 1rem;
+        margin-right: .4rem;
+        fill: $color3;
+    }
+    //button go courses
+    &__button-courses-container {
+        margin-top: 4rem;
+        margin-bottom: 3rem;
+        text-align: center;
+    }
+    &__button-courses {
+        display: inline-block;
+        padding: 0 2rem;
+        border-radius: .3rem;
+        line-height: 3;
+        font-size: 1.2rem;
+        color: #fff;
+        background: linear-gradient(-20deg, #e5544c, #ca8803);
+        &:hover {
+            background: linear-gradient($color3, $color3);
+        }
+    }
+}
