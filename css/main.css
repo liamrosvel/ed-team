@@ -61,7 +61,7 @@ a {
     position: relative;
     z-index: 750; }
   .header__icon-menu {
-    fill: #27C9FF; }
+    fill: #CE4139; }
   .header__icon-close {
     fill: #fff;
     display: none; }
@@ -79,7 +79,7 @@ a {
     position: fixed;
     width: 100%;
     top: 0;
-    left: -100%;
+    right: -100%;
     z-index: 700;
     min-height: 100vh;
     display: -webkit-box;
@@ -92,9 +92,12 @@ a {
     -ms-flex-align: center;
     align-items: center;
     background-color: #27C9FF;
-    opacity: .97; }
+    opacity: 0;
+    -webkit-transition: all 250ms ease-in;
+    transition: all 250ms ease-in; }
     .main-nav.active {
-      left: 0; } }
+      right: 0;
+      opacity: .97; } }
 
 .main-nav__list {
   width: 50%;
